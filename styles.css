@@ -182,8 +182,8 @@
 .edu{
   position:relative;
   background: #131313;
-  background: -webkit-linear-gradient(to bottom, #131313,#555555);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #131313,#555555); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  background: -webkit-linear-gradient(to bottom, #131313,#272727);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #131313,#272727); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
   padding: 0 0;
   overflow:hidden;
 }
@@ -275,6 +275,8 @@
 .exp{
   position:relative;
   background: #555555;
+  background: -webkit-linear-gradient(to bottom, #272727,#555555);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #272727,#555555); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
   padding: 0 0;
   overflow:hidden;
 }
