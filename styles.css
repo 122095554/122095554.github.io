@@ -239,19 +239,6 @@
   text-align: center;
   padding:10% 0;
 }
-@media screen and (max-width: 660px){
-  .edu_container {
-    grid-template-columns: 1fr;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 90%;
-    text-align: center;
-    padding:10% 0;
-  }
-}
 .edu_content{
   position:relative;
   color:#555;
@@ -260,13 +247,46 @@
 .edu_content:hover{
   z-index:100;
 }
+.content_pic{
+  width:300px;
+  height:300px;
+  border: 5px solid #555;
+  border-radius: 50px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+.content_pic:hover{
+  transform: scale(1.1,1.1);
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 960px){
+  .edu_container {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    height: 90%;
+    text-align: center;
+    padding:10% 0;
+  }
+  .content_pic{
+    width:200px;
+    height:200px;
+    border: 5px solid #555;
+    border-radius: 50px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+  }
+}
 .text_block{
   position: absolute;
   bottom: 8%;
   right: 10%;
   left:10%;
   padding: 20px;
-  background-color: rgba(76, 76, 76, 0.5);
+  background-color: rgba(76, 76, 76, 0.8);
   color:rgb(187, 205, 206);
   border-radius: 25px;
   word-wrap: break-word; 
@@ -301,15 +321,26 @@
 }
 @media screen and (max-width: 960px){
   .exp_container{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     display: grid;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
     height: 90%;
     text-align: center;
     padding:10% 0;
+  }
+  .text_block{
+    position: absolute;
+    bottom: 8%;
+    right: 10%;
+    left:10%;
+    padding: 20px;
+    background-color: rgba(76, 76, 76, 0.8);
+    color:rgb(187, 205, 206);
+    border-radius: 25px;
+    word-wrap: break-word; 
   }
 }
 
@@ -343,6 +374,22 @@
 
 .drawing_img:hover{
   transform: scale(1.5,2.1);
+  transition: all 0.3s ease;
+  object-fit: fill;
+
+}
+.drawing_img_sq{
+  width:300px;
+  height:300px;
+  border: 5px solid #555;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.drawing_img_sq:hover{
+  transform: scale(1.5,1.5);
   transition: all 0.3s ease;
   object-fit: fill;
 
