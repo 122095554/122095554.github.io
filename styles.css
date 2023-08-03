@@ -70,6 +70,10 @@
   color:#1c6ab3;
   transition: all 0.3s ease;
 }
+.highlight {
+  color:#1c6ab3;
+  border-bottom: 4px solid rgb(102, 0, 255);
+}
 
 @media screen and (max-width: 960px) {
   .navbar_container {
@@ -158,14 +162,18 @@
   justify-content: center;
   align-items: center;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto auto;
   height: 90%;
   text-align: center;
   padding: 30px;
 }
-.hero_text{
-  color:aliceblue;
-  word-wrap: break-word;
+.intro_block{
+  margin-top:5%;
+  padding: 20px;
+  color:rgb(187, 205, 206);
+  border-radius: 25px;
+  word-wrap: break-word; 
+  font-size: 1.5rem;
 }
 .profile_pic{
   width:300px;
@@ -173,6 +181,7 @@
   border: 5px solid #555;
   border-radius: 50px;
   transition: all 0.3s ease;
+  object-fit: cover;
 }
 .profile_pic:hover{
   transform: scale(1.1,1.1);
